@@ -1,0 +1,90 @@
+.btn {
+  background-color: #3B82F6;          /* bg-blue-500 
+  color:            #FFFFFF;          /* text-white */ 
+  font-weight:      700;              /* font-bold */ 
+  padding-top:      0.5rem;           /* py-2 */ 
+  padding-bottom:   0.5rem;           /* py-2 */ 
+  padding-left:     1rem;             /* px-4 */ 
+  padding-right:    1rem;             /* px-4 */ 
+  border-radius:    0.25rem;          /* rounded */ 
+}
+
+.btn-accent {
+  background-color: #DC2626;          /* bg-red-600 */ 
+  color:            #FFFFFF;          /* text-white */ 
+  padding-left:     1rem;             /* px-4 */ 
+  padding-right:    1rem;             /* px-4 */ 
+  padding-top:      0.5rem;           /* py-2 */ 
+  padding-bottom:   0.5rem;           /* py-2 */ 
+  border-radius:    0.5rem;           /* rounded-lg */ 
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+                                      /* transition */ 
+  transition-duration: 150ms;         /* transition */ 
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                                      /* transition */ 
+}
+.btn-accent:hover {
+  background-color: #B91C1C;          /* hover:bg-red-700 */ 
+}
+.btn-accent:focus {
+  outline:          none;              /* focus:outline-none */ 
+  box-shadow:       0 0 0 4px #FBBF24; /* focus:ring-4 focus:ring-yellow-400 */ 
+}
+.btn-accent:focus-visible {
+  outline:          none;              /* focus:outline-none */ 
+  box-shadow:       0 0 0 4px #FBBF24; /* focus:ring-4 focus:ring-yellow-400 */ 
+}
+.btn-accent:focus-visible:hover {
+  background-color: #B91C1C;          /* hover:bg-red-700 */ 
+}
+.btn-accent:focus-visible:active {
+  background-color: #B91C1C;          /* active:bg-red-700 */ 
+}
+.btn-accent:active {
+  background-color: #B91C1C;          /* active:bg-red-700 */
+}
+
+.btn-clear {
+  border-width:     1px;              /* border */
+  border-style:     solid;            /* border (default) 
+  border-color:     #BE185D;          /* border-pink-700 */
+  color:            #BE185D;          /* text-pink-700 */
+  padding-left:     1rem;             /* px-4 */ 
+  padding-right:    1rem;             /* px-4 */
+  padding-top:      0.5rem;           /* py-2 */
+  padding-bottom:   0.5rem;           /* py-2 */ 
+  border-radius:    0.5rem;           /* rounded-lg */
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+                                      /* transition */
+  transition-duration: 150ms;         /* transition */
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                                      /* transition */
+}
+.btn-clear:hover {
+  background-color: #BE185D;          /* hover:bg-pink-700 */
+  color:            #FFFFFF;          /* hover text-white */
+}
+.btn-clear:focus {
+  outline:          none;              /* focus:outline-none */
+  box-shadow:       0 0 0 4px #FBBF24; /* focus:ring-4 focus:ring-yellow-400 */ 
+}
+.btn-clear:focus-visible {
+  outline:          none;              /* focus:outline-none */
+  box-shadow:       0 0 0 4px #FBBF24; /* focus:ring-4 focus:ring-yellow-400 */
+}
+.btn-clear:focus-visible:hover {
+  background-color: #BE185D;          /* hover:bg-pink-700 */ 
+  color:            #FFFFFF;          /* hover text-white */
+}
+.btn-clear:focus-visible:active {
+  background-color: #BE185D;          /* active:bg-pink-700 */
+  color:            #FFFFFF;          /* active text-white */ 
+}
+.btn-clear:active {
+  background-color: #BE185D;          /* active:bg-pink-700 */ 
+  color:            #FFFFFF;          /* active text-white */
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To‑Do List</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="bg-black text-white">
+
+  <!-- Navbar + Clock -->
+  <nav class="bg-gray-900 p-4 flex items-center justify-between container mx-auto rounded-b-lg shadow-md">
+    <div class="space-x-6">
+      <a href="index.html"     class="hover:text-pink-500">Home</a>
+      <a href="pomodoro.html"  class="hover:text-pink-500">Pomodoro</a>
+      <a href="notes.html"     class="hover:text-pink-500">Notes</a>
+    </div>
+    <div id="live-clock" class="font-mono text-lg"></div>
+  </nav>
+
+  <div class="container mx-auto p-6 max-w-lg bg-gray-800 rounded-lg shadow-lg mt-6">
+    <h1 class="text-3xl font-bold mb-4 text-pink-600">📝 To‑Do List</h1>
+
+    <div class="flex items-center mb-4 space-x-2">
+      <input id="todo-input" type="text" placeholder="Enter a task"
+             class="flex-1 p-2 bg-gray-700 border border-red-600 rounded focus:outline-none"/>
+      <button id="todo-add-btn"    class="btn-accent">Add</button>
+      <button id="todo-clear-btn"  class="btn-clear">Clear All</button>
+    </div>
+
+    <ul id="todo-list" class="space-y-2 mb-4"></ul>
+    <p id="todo-empty" class="text-gray-500">No tasks yet. Add one above.</p>
+
+    <blockquote id="quote-box"
+      class="bg-gray-800 text-gray-200 italic border-l-4 border-pink-700 pl-4 py-3 rounded-lg shadow-md transition-all">
+      <p id="quote-text" class="mb-2"></p>
+      <footer id="quote-author" class="text-right font-semibold"></footer>
+    </blockquote>
+    <button id="new-quote-btn"
+            class="mt-4 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg transition">
+      New Quote
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pomodoro Timer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="bg-black text-white">
+
+  <!-- Navbar + Clock -->
+  <nav class="bg-gray-900 p-4 flex items-center justify-between container mx-auto rounded-b-lg shadow-md">
+    <div class="space-x-6">
+      <a href="index.html"    class="hover:text-pink-500">Home</a>
+      <a href="todo.html"     class="hover:text-pink-500">To‑Do</a>
+      <a href="notes.html"    class="hover:text-pink-500">Notes</a>
+    </div>
+    <div id="live-clock" class="font-mono text-lg"></div>
+  </nav>
+
+  <div class="container mx-auto p-6 max-w-md bg-gray-800 rounded-lg shadow-lg mt-6">
+    <h1 class="text-3xl font-bold mb-4 text-pink-600">⏳ Pomodoro Timer</h1>
+
+    <div class="text-center mb-4">
+      <div id="timer-display" class="text-5xl font-mono">25:00</div>
+      <div class="mt-2 text-gray-400">
+        Cycles completed: <span id="cycle-count">0</span>
+      </div>
+    </div>
+
+    <div class="flex justify-center space-x-4">
+      <button id="pom-start-btn" class="btn-accent">Start</button>
+      <button id="pom-pause-btn" class="btn-accent">Pause</button>
+      <button id="pom-reset-btn" class="btn-accent">Reset</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
