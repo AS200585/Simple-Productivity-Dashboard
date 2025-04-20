@@ -1,7 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Theme restore (optional)
+  // Restore theme
   const theme = localStorage.getItem('theme');
   document.documentElement.classList.toggle('dark', theme !== 'light');
+
+  // Theme toggle logic
+  const themeToggleBtn = document.getElementById('theme-toggle');
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', () => {
+      const isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+  }
 
   // Live Clock (top‑right corner)
   const clockEl = document.getElementById('live-clock');
