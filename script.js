@@ -1,27 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Restore theme
-  const theme = localStorage.getItem('theme');
-  document.documentElement.classList.toggle('dark', theme !== 'light');
-
-  // Theme toggle logic
-  const themeToggleBtn = document.getElementById('theme-toggle');
-  if (themeToggleBtn) {
-    themeToggleBtn.addEventListener('click', () => {
-      const isDark = document.documentElement.classList.toggle('dark');
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    });
-  }
-
   // Live Clock (top‑right corner)
-  const clockEl = document.getElementById('live-clock');
-  if (clockEl) {
-    const updateClock = () => {
-      clockEl.textContent = new Date().toLocaleTimeString();
-    };
-    updateClock();
-    setInterval(updateClock, 1000);  // runs every second 
+  function updateClock() {
+    const now = new Date();
+    const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    const clock = document.getElementById('live-clock');
+    if (clock) {
+      clock.textContent = timeString;
+    }
   }
-
+  // Update every second
+  setInterval(updateClock, 1000);
+  updateClock(); // Initial call
+  
   if (document.getElementById('todo-list')) {
     // To‑Do List logic
     const todoInput    = document.getElementById('todo-input');

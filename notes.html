@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -7,19 +7,17 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css"/>
 </head>
-<body class="bg-black text-white">
 
+<body class="bg-white text-black dark:bg-black dark:text-white">
   <!-- Navbar + Clock -->
   <nav class="bg-gray-900 p-4 flex items-center justify-between container mx-auto rounded-b-lg shadow-md">
     <div class="space-x-6">
       <a href="index.html"     class="hover:text-pink-500">Home</a>
       <a href="todo.html"      class="hover:text-pink-500">To‑Do</a>
       <a href="pomodoro.html"  class="hover:text-pink-500">Pomodoro</a>
-    </div>
-    <!-- Theme Toggle Button -->
-    <button id="theme-toggle" class="hover:text-pink-500 ml-4">Toggle Theme</button>
+    </div>  
     <!-- Live Clock Display -->
-    <div id="live-clock" class="font-mono text-lg"></div>
+    <div id="live-clock" class="font-mono text-lg text-gray-800 dark:text-gray-200"></div>
   </nav>
 
   <div class="container mx-auto p-6 max-w-lg bg-gray-800 rounded-lg shadow-lg mt-6">
